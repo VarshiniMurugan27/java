@@ -1,0 +1,34 @@
+import java.io.*;
+
+class BSC {
+
+    void java() {
+        System.out.println("Java Program");
+    }
+
+    void os() {
+        System.out.println("Operating System");
+    }
+}
+
+class BCA extends BSC {
+
+    void cws() {
+        System.out.println("Cloud Web Service");
+    }
+}
+
+public class Sample {
+
+    public static void main(String args[]) {
+
+        BSC a = new BSC();
+        a.java();
+        a.os();
+
+        BCA b = new BCA();
+        b.java();
+        b.os();
+        b.cws();
+    }
+}
